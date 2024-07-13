@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Google Docs LLaMA Assistant",
+    "version": "1.0",
+    "description": "Auto-generate text in Google Docs using a local LLaMA model",
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://docs.google.com/*",
+        "http://localhost:3333/"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://docs.google.com/document/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' http://localhost:3333/"
+    }
+}
