@@ -10,7 +10,8 @@ The Google Docs Copilot is open source software protected by the GNU Lesser Gene
 ```bash
 ollama run llama3 #or other ollama models
 ```
-If you want to use other models, be sure to change the MODEL_NAME param in the .env file to the correct model name. 
+If you want to use other models, be sure to change the MODEL_NAME param in the .env file to the correct model name.
+Smaller ones like phi3, qwen, deepseek-coder are good options if your hardware is not as powerful.
 
 
 Start the node server
