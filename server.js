@@ -1,6 +1,27 @@
+///* 
+// * Copyright (C) 2024 NPC Worldwide, LLC
+//*
+//* This file is part of the Google Docs Copilot project.
+//*
+//* Google Docs Copilot is free software: you can redistribute it and/or modify
+//* it under the terms of the GNU Lesser General Public License as published by
+//* the Free Software Foundation, either version 3 of the License, or
+//* (at your option) any later version.
+//*
+//* Google Docs Copilot is distributed in the hope that it will be useful,
+//* but WITHOUT ANY WARRANTY; without even the implied warranty of
+//* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//* GNU Lesser General Public License for more details.
+//*
+//* You should have received a copy of the GNU Lesser General Public License
+//* along with Google Docs Copilot.  If not, see <https://www.gnu.org/licenses/>.
+//*/
+
 import express from 'express';
 import fetch from 'node-fetch';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
 
 const app = express();
 const port = 3333;
@@ -17,7 +38,7 @@ app.post('/generate', async (req, res) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: "llama3",
+        model: process.env.MODEL_NAME, // Use the environment variable
         prompt: 'Please finish the following item: "" ' + context + ' "".  Do not provide any additional information. Reply with only the text that should be added to complete the item.',
         stream: false
       })
