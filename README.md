@@ -42,6 +42,6 @@ Planned improvements
 
 1. Changing the behavior of the suggestion box to auto fill in to the document at the cursor upon clicking.
 2. Support llama-cpp -like servers and OpenAI + Claude + other providers through API keys.
-
+3. Expanding to support other suggestions in online text editors (Overleaf, OneDrive Word+PPT, other Google Drive services).
 
 
