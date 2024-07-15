@@ -1,12 +1,12 @@
-# Google Docs Copilot
-A chrome extension to allow users to use local large language models for auto complete suggestions on google docs.
+# Open Web Copilot
+A chrome extension to allow users to use local large language models for auto complete suggestions on online text editors. Currently supports google docs.
 
-The Google Docs Copilot is open source software protected by the GNU Lesser General Public License v3.0 ( LGPL-3.0-or-later ).
+The Open Web Copilot is open source software protected by the GNU Lesser General Public License v3.0 ( LGPL-3.0-or-later ).
 
 
 1. Clone this repo:
 ```bash
-git clone https://github.com/cagostino/google_docs_copilot/edit/main/README.md
+git clone https://github.com/cagostino/open-web-copilot/edit/main/README.md
 ```
 3. Serve the backend llm with ollama
 
@@ -42,6 +42,6 @@ Planned improvements
 
 1. Changing the behavior of the suggestion box to auto fill in to the document at the cursor upon clicking.
 2. Support llama-cpp -like servers and OpenAI + Claude + other providers through API keys.
-3. Expanding to support other suggestions in online text editors (Overleaf, OneDrive Word+PPT, other Google Drive services).
+3. Expanding to support suggestions in other online text editors (Overleaf, OneDrive Word+PPT, other Google Drive services).
 
 
