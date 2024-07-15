@@ -4,8 +4,11 @@ A chrome extension to allow users to use local large language models for auto co
 The Google Docs Copilot is open source software protected by the GNU Lesser General Public License v3.0 ( LGPL-3.0-or-later ).
 
 
-
-1. Serve the backend llm with ollama
+1. Clone this repo:
+```bash
+git clone https://github.com/cagostino/google_docs_copilot/edit/main/README.md
+```
+3. Serve the backend llm with ollama
 
 ```bash
 ollama run llama3 #or other ollama models
@@ -15,7 +18,7 @@ Smaller ones like phi3, qwen, deepseek-coder are good options if your hardware i
 
 
 
-2.Install the necessary node packages: 
+3.Install the necessary node packages: 
 ```bash
 
 
@@ -25,12 +28,12 @@ npm install node-fetch
 npm install cors
 ```
 
-3.
+4.
 Run the node server:
 ```bash
 node server.js
 ```
-4.
+5.
 Load the chrome extension into your browser by doing "load unpacked" and selecting the folder containing these files.
 
 Once it's ready and running, as you add new text to your doc it will periodically send it to the LLM for suggestions after you've finished typing. Clicking on the suggestion box copies it to one's clipboard. 
