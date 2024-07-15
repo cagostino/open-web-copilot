@@ -9,9 +9,10 @@ ollama run llama3
 
 Start the node server
 
+Install the necessary node components
 
 ```bash
 node server.js
 ```
 
-Load the chrome extension into your browser by doing the "load unpacked extension"
+Load the chrome extension into your browser by doing "load unpacked" and selecting the folder containing these files.
