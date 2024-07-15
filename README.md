@@ -6,7 +6,7 @@ The Open Web Copilot is open source software protected by the GNU Lesser General
 
 1. Clone this repo:
 ```bash
-git clone https://github.com/cagostino/open-web-copilot/edit/main/README.md
+git clone https://github.com/cagostino/open-web-copilot.git
 ```
 3. Serve the backend llm with ollama
 
